@@ -4,7 +4,7 @@
   "release_date": "2026-10-30",
   "description": "Bộ Tiện Ích Sư Phạm 3-Trong-1 GDPT 2018: (1) Soạn Slide PowerPoint 16:9 chuẩn sư phạm từ Giáo án Word/SGK -> Viết lời bình Notes -> Lồng tiếng AI phát thanh viên -> Xuất Video bài giảng MP4 Full HD 1080p; (2) Tạo Web Video Tương Tác E-Learning chống tua nhanh 100%, 4 dạng câu hỏi Mastery Gate >= 80%, tự phân lớp Google Sheets, bảo mật & đổi mật khẩu Chế độ Thầy Cô 1-click kèm hướng dẫn đưa lên Netlify; (3) Tạo kịch bản & Prompt Veo 3 Video khởi động bài học 60-80s đồng nhất nhân vật.",
   "author": "Thầy Nguyễn Văn Thiện - Trường THCS Ứng Hòe",
-  "github_repo": "nguyenvanthien1812-ops/skill-slide-va-video-tuong-tac",
+  "github_repo": "nguyenvanthien1812-ops/skill-video-bai-giang-video-mo-dau-bai-hoc",
   "changelog": {
     "2.0.0": [
       "NÂNG CẤP LÊN BỘ TIỆN ÍCH 3-TRONG-1 HOÀN CHỈNH (SLIDE PPTX -> LỜI BÌNH & VIDEO MP4 -> VIDEO TƯƠNG TÁC E-LEARNING + VIDEO KHỞI ĐỘNG VEO 3): Tích hợp khép kín toàn bộ quy trình từ file Giáo án Word (.docx) hoặc Sách giáo khoa (PDF/ảnh chụp) -> Soạn Slide PowerPoint 16:9 -> Viết lời bình Notes -> Lồng tiếng AI tự đo mốc giây (_SlideTimeline.json) -> Xuất Video bài giảng MP4 Full HD -> Đóng gói Trang Web Video Tương Tác E-Learning đưa lên Netlify.",

@@ -35,12 +35,12 @@ def parse_github_url(raw_url: str):
     m = re.search(r"github\.com[:/]([^/\s]+)/([^/\s]+?)(?:\.git)?$", raw)
     if m:
         user, repo = m.group(1), m.group(2)
-        https_url = f"https://github.com/{user}/{repo}.git"
+        https_url = f"https://{user}@github.com/{user}/{repo}.git"
         return user, repo, https_url
     if re.match(r"^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$", raw):
         user, repo = raw.split("/", 1)
         repo = re.sub(r"\.git$", "", repo)
-        return user, repo, f"https://github.com/{user}/{repo}.git"
+        return user, repo, f"https://{user}@github.com/{user}/{repo}.git"
     return None, None, None
 
 

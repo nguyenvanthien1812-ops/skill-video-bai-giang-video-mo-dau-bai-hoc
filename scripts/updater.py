@@ -38,7 +38,7 @@ PROTECTED_FILES = {
 }
 
 GITHUB_USER = "nguyenvanthien1812-ops"
-GITHUB_REPO = "skill-slide-va-video-tuong-tac"
+GITHUB_REPO = "skill-video-bai-giang-video-mo-dau-bai-hoc"
 
 
 def detect_github_repo():
