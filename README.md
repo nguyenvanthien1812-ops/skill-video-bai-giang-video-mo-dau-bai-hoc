@@ -1,6 +1,6 @@
 # 🎓 Bộ Tiện Ích Sư Phạm 3-Trong-1: Slide Bài Giảng PPTX → Lời Bình & Video MP4 → Web Video Tương Tác E-Learning (+ Video Khởi Động Veo 3)
 
-**Phiên bản:** `v2.0.0`  
+**Phiên bản:** `v2.1.0`  
 **Tác giả:** Thầy Nguyễn Văn Thiện — Trường THCS Ứng Hòe  
 **Mục tiêu:** Cung cấp bộ công cụ độc lập, tự động hóa khép kín 100% giúp giáo viên phổ thông chuẩn bị trọn bộ **Slide PowerPoint chuẩn sư phạm $\to$ Lời bình & Lồng tiếng AI $\to$ Video bài giảng MP4 Full HD $\to$ Trang Web Video Tương Tác E-Learning đưa lên Netlify** (kèm kịch bản Video khởi động bài học Veo 3) theo chuẩn **GDPT 2018** và **Công văn 5512/BGDĐT**.
 
@@ -17,7 +17,17 @@
 ### 2. 🌐 Tạo Trang Web Video Tương Tác E-Learning & Đưa Lên Web Netlify (30 Giây)
 - Tạo trực tiếp từ **Video `.mp4` vừa xuất từ PPTX**, từ **Link YouTube bài giảng**, hoặc làm **trọn gói từ con số 0 chỉ với file Giáo án Word / Sách giáo khoa**.
 - **Khóa chống tua nhanh 100%** (tự động kéo ngược về vị trí cũ nếu học sinh cố tua; khóa YouTube chạy ngầm khi đang mở câu hỏi).
-- **10 dạng câu hỏi tương tác hiện đại** chạy mượt trên cả điện thoại và máy tính: Trắc nghiệm 4 lựa chọn (`MCQ`), Đúng/Sai 1-chạm (`TF`), Điền đáp án số/chữ (`Fill`), Chạm/Ghép thẻ (`Drag/Tap`).
+- **Trọn bộ 10 dạng câu hỏi tương tác chuẩn GDPT 2018** chạy mượt trên cả điện thoại và máy tính (chỉ cần gọi tên tiếng Việt hoặc để AI tự phối hợp đa dạng):
+  1. **Trắc nghiệm 1 lựa chọn (`A, B, C, D` - `mcq`)**
+  2. **Đúng / Sai đơn (1 nhận định - `tf`)**
+  3. **Đúng / Sai đa mệnh đề (`4 ý a, b, c, d` chuẩn Phần II Bộ GD&ĐT - `tf_group`)**
+  4. **Trắc nghiệm nhiều đáp án đúng (`Checkbox ☐` - `multi`)**
+  5. **Điền đáp án ngắn / Điền số (`fill`)**
+  6. **Điền khuyết nhiều chỗ trống `(1), (2), (3)` có ngân hàng từ gợi ý hoặc gõ trực tiếp (`cloze`)**
+  7. **Chạm / Ghép thẻ vào 1 ô kết quả (`drag`)**
+  8. **Nối cặp tương ứng 2 cột (`Cột A ↔ Cột B` - `match`)**
+  9. **Sắp xếp thứ tự quy trình / các bước giải / dãy số (`order`)**
+  10. **Phân loại thẻ vào `2–4` nhóm kiến thức (`classify`)**
 - **Quy tắc sư phạm Mastery Gate ($\ge$ 80%):** Học sinh trả lời **SAI tuyệt đối không lộ hộp Giải thích** (chỉ hiện nút `⏪ Xem lại 30s bài giảng`); chỉ khi tự suy nghĩ trả lời **ĐÚNG** mới mở `💡 Hướng dẫn & Giải thích` và cộng trọn `+1 điểm` hoàn thành trạm.
 - **Sổ điểm Google Sheets thời gian thực:** Tự động tách tab riêng cho từng lớp (`6A`, `6B`, `7A1`...) và thống kê điểm trung bình.
 - **Bảo mật & Đổi mật khẩu Chế độ Thầy Cô 1-click:** Ẩn hoàn toàn gợi ý mật khẩu trên giao diện học sinh, đổi mật khẩu trong 1 giây bằng `DOI_MAT_KHAU_THAY_CO.bat`, kèm hướng dẫn từng bước đưa lên **Netlify**!
