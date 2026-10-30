@@ -7,7 +7,7 @@ description: >-
   (3) Tạo kịch bản & prompt Veo 3 cho video khởi động bài học (warm-up video) 60–80 giây đồng nhất nhân vật.
   Kích hoạt khi giáo viên yêu cầu:
   - Về Soạn Slide PPTX, Lời bình & Xuất Video từ PPTX: "tôi muốn làm pptx", "tôi muốn tạo pptx", "tôi muốn làm slide", "tôi muốn tạo slide", "làm pptx", "tạo pptx", "làm slide", "tạo slide", "soạn slide", "tạo slide bài giảng", "làm pptx từ giáo án", "soạn slide khtn", "làm slide bài dạy", "tạo bài giảng pptx", "làm slide từ pdf", "tạo slide chuẩn sư phạm", "soạn pptx bài giảng", "làm pptx từ sách giáo khoa", "soạn bài giảng powerpoint", "tôi có kịch bản slide rồi", "làm theo kịch bản của tôi", "tôi đã soạn sẵn nội dung", "chỉ cần chèn ảnh vào slide", "làm slide toán", "soạn slide môn toán", "tạo slide công thức toán", "slide toán omml", "công thức toán slide", "soạn bài giảng toán", "tôi có file pptx rồi tôi muốn viết lời bình", "tôi có file pptx rồi", "tôi muốn viết lời bình", "thêm lời bình cho slide", "viết lời bình pptx", "viết lời bình cho slide", "lồng tiếng pptx", "xuất video từ pptx", "làm video bài giảng từ pptx".
-  - Về Tạo Video Tương Tác E-Learning & Mật khẩu Chế độ Thầy Cô: "tôi muốn tạo video tương tác", "hướng dẫn tạo video tương tác", "làm video có câu hỏi tương tác", "video chống tua nhanh", "tạo video e-learning", "video tích hợp câu hỏi", "làm video học sinh không tua được", "tạo interactive video", "video ghi điểm vào google sheet", "làm video từ giáo án", "làm video từ giáo án word", "làm video từ sách giáo khoa", "làm video từ file sgk", "tạo video tương tác từ giáo án", "tạo video tương tác từ sách giáo khoa", "tạo video tương tác từ sgk", "tôi muốn thay đổi mật khẩu chế độ thầy cô", "thay đổi mật khẩu chế độ thầy cô", "đổi mật khẩu chế độ thầy cô", "đổi mật khẩu thầy cô", "đặt mật khẩu chế độ thầy cô", "cập nhật tính năng mới", "update skill".
+  - Về Tạo Video Tương Tác E-Learning & Mật khẩu Chế độ Thầy Cô: "tôi muốn tạo video tương tác", "tôi muốn làm video tương tác", "hướng dẫn tạo video tương tác", "làm video có câu hỏi tương tác", "video chống tua nhanh", "tạo video e-learning", "video tích hợp câu hỏi", "làm video học sinh không tua được", "tạo interactive video", "video ghi điểm vào google sheet", "làm video từ giáo án", "làm video từ giáo án word", "làm video từ sách giáo khoa", "làm video từ file sgk", "tạo video tương tác từ giáo án", "tạo video tương tác từ sách giáo khoa", "tạo video tương tác từ sgk", "làm video tương tác từ slide", "tạo video tương tác từ pptx", "tôi có file slide rồi", "tôi muốn thay đổi mật khẩu chế độ thầy cô", "thay đổi mật khẩu chế độ thầy cô", "đổi mật khẩu chế độ thầy cô", "đổi mật khẩu thầy cô", "đặt mật khẩu chế độ thầy cô", "cập nhật tính năng mới", "update skill".
   - Về Video khởi động Veo 3: "tôi muốn tạo kịch bản video mở đầu bài học", "tôi muốn làm video", "tôi muốn viết kịch bản video", "tạo video bài học", "làm video khởi động", "viết prompt veo 3", "tạo kịch bản video", "làm video mở đầu bài", "tạo video mở đầu bài học", "tạo prompt video", "viết kịch bản cho video", "làm video cho bài học", "tôi cần video khởi động", "lên kịch bản video", "kịch bản video mở đầu".
 ---
 
@@ -388,9 +388,10 @@ Khi giáo viên gõ câu lệnh mở đầu chưa kèm thông tin chi tiết, AI
 > ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 > 🗺️ **PHẦN 1: QUY TRÌNH 4 BƯỚC TỪ ĐẦU ĐẾN KHI CÓ LINK GỬI ZALO HỌC SINH**
 >
-> * **Bước 1 — Chuẩn bị nguồn bài giảng (Hỗ trợ cả khi ĐÃ CÓ VIDEO hoặc CHƯA CÓ VIDEO):**
+> * **Bước 1 — Chuẩn bị nguồn bài giảng (Hỗ trợ cả 3 lộ trình thực tế của Giáo viên):**
 >   + **Lộ trình A *(Đã có sẵn Video YouTube hoặc Video MP4 vừa xuất từ PPTX)*:** Thầy/Cô chỉ cần copy đường link video YouTube bài giảng (có thể gửi kèm thêm file **Giáo án Word `.docx`** hoặc **file/ảnh Sách giáo khoa SGK** để em ra câu hỏi bám sát 100% tiết dạy trên lớp).
->   + **Lộ trình B *(Chưa có Video — Chỉ có Giáo án Word `.docx` hoặc Sách giáo khoa `.pdf` / ảnh chụp trang SGK)*:** Em sẽ tự động làm trọn gói cho Thầy/Cô từ con số 0: **Bóc tách nội dung & hình ảnh gốc từ Giáo án/SGK $\to$ Thiết kế bộ Slide PowerPoint 16:9 chuẩn sư phạm $\to$ Viết lời giảng truyền cảm vào Notes $\to$ Lồng tiếng AI chuẩn phát thanh viên (Cô Hoài My / Thầy Nam Minh) $\to$ Xuất ra file Video bài giảng Full HD 1080p (`.mp4`) $\to$ Gắn trạm câu hỏi tương tác khớp chính xác từng giây kết thúc mỗi mục kiến thức!**
+>   + **Lộ trình B *(Chưa có Video & Chưa có Slide — Chỉ có Giáo án Word `.docx` hoặc Sách giáo khoa `.pdf` / ảnh chụp trang SGK)*:** Em sẽ tự động làm trọn gói cho Thầy/Cô từ con số 0: **Bóc tách nội dung & hình ảnh gốc từ Giáo án/SGK $\to$ Thiết kế bộ Slide PowerPoint 16:9 chuẩn sư phạm $\to$ Viết lời giảng truyền cảm vào Notes $\to$ Lồng tiếng AI chuẩn phát thanh viên (Cô Hoài My / Thầy Nam Minh) $\to$ Xuất ra file Video bài giảng Full HD 1080p (`.mp4`) $\to$ Gắn trạm câu hỏi tương tác khớp chính xác từng giây kết thúc mỗi mục kiến thức!**
+>   + **Lộ trình C *(Đã có sẵn file Slide PowerPoint `.pptx` — Chưa có Video)*:** Thầy/Cô gửi file `.pptx` có sẵn của mình $\to$ Em tự động thực hiện nối tiếp trọn gói: **Viết lời bình giảng dạy vào Notes $\to$ Lồng tiếng AI chuẩn phát thanh viên (tự đo mốc giây `_SlideTimeline.json`) $\to$ Xuất Video bài giảng MP4 Full HD 1080p $\to$ Đóng gói thành Trang Web Video Tương Tác E-Learning!**
 > * **Bước 2 — Cách gửi file Giáo án Word, Slide PPTX hoặc Sách giáo khoa vào đây (nếu dùng):**
 >   + *Cách 1 (Nhanh nhất):* Kéo thả trực tiếp file Giáo án (`.docx`), Slide (`.pptx`), file SGK (`.pdf`) hoặc ảnh chụp trang sách vào khung chat này.
 >   + *Cách 2 (Lấy đường dẫn file trên máy):* Nhấn giữ phím **`Shift` + Chuột phải** vào file $\to$ chọn **`Copy as path`** *(Windows 11 bấm `Ctrl + Shift + C`)* rồi dán vào câu lệnh bên dưới.
@@ -492,6 +493,24 @@ Khi giáo viên gõ câu lệnh mở đầu chưa kèm thông tin chi tiết, AI
 >   + Trạm 8 (phút 12:10 - Nối cặp 2 cột A-B): [Câu hỏi | Cặp 1: A1 - B1; Cặp 2: A2 - B2; Cặp 3: A3 - B3 | Giải thích]
 >   + Trạm 9 (phút 13:15 - Sắp xếp thứ tự): [Câu hỏi | Thứ tự đúng: Bước 1 -> Bước 2 -> Bước 3 | Giải thích]
 >   + Trạm 10 (phút 14:00 - Phân loại nhóm): [Câu hỏi | Nhóm 1: (các thẻ...); Nhóm 2: (các thẻ...) | Giải thích]
+> ```
+>
+> 🟡 **MẪU 5 — ĐÃ CÓ SẴN FILE SLIDE POWERPOINT (`.PPTX`): VIẾT LỜI BÌNH $\to$ LỒNG TIẾNG AI $\to$ XUẤT VIDEO MP4 $\to$ TẠO WEB VIDEO TƯƠNG TÁC:**
+> ```text
+> Tôi đã có sẵn file bài giảng Slide PowerPoint (.pptx) tại: "[Kéo thả file .pptx vào chat HOẶC giữ Shift + Chuột phải vào file .pptx chọn Copy as path rồi dán vào đây]".
+> Em hãy thực hiện nối tiếp trọn gói từ file Slide này giúp tôi (Viết lời bình -> Lồng tiếng AI -> Xuất Video MP4 -> Tạo Web Video Tương Tác):
+> - Môn & Lớp: [Ví dụ: Toán 6 - Kết nối tri thức]
+> - Tên bài học: [Ví dụ: Bài 6 - Lũy thừa với số mũ tự nhiên]
+> - Giáo viên & Trường: [Tên Thầy/Cô - Tên trường]
+> - Giọng đọc AI lồng tiếng cho Slide: [Cô Hoài My (Nữ miền Bắc truyền cảm) / hoặc Thầy Nam Minh (Nam miền Bắc trầm ấm)]
+> - Hình thức sử dụng Video Tương Tác: [Online cho học sinh học tại nhà qua YouTube + Netlify / hoặc Offline dạy trực tiếp trên TV lớp học]
+> - Link Web App Google Sheets: [Dán link .../exec HOẶC ghi "Hướng dẫn tôi tạo Sổ điểm Google Sheets"]
+> - Mật khẩu Chế độ Thầy Cô: [Nhập mật khẩu riêng của Thầy/Cô, ví dụ: Thien2026 - để trống mặc định là 123456]
+> - Các dạng câu hỏi muốn dùng: [Ghi "Tự phối hợp đa dạng trong 10 dạng" HOẶC ghi tên các dạng muốn có]
+> - Yêu cầu quy trình:
+>   1. Đọc toàn bộ nội dung các slide trong file .pptx của tôi, tự động viết lời bình giảng dạy tự nhiên truyền cảm vào phần Notes của từng slide (nếu slide nào chưa có lời bình) và đề xuất bộ [5 - 7] câu hỏi tương tác bám sát nội dung slide.
+>   2. Lồng tiếng AI chuẩn phát thanh viên vào từng slide, tự động đo mốc giây chuyển slide (_SlideTimeline.json) và kết xuất ra file Video bài giảng Full HD 1080p (.mp4).
+>   3. Căn đúng mốc giây kết thúc các slide kiến thức trong video vừa xuất để đóng gói thành Trang Web Video Tương Tác (chống tua nhanh 100%, ẩn điểm dừng ở chế độ Học sinh, trả lời ĐÚNG mới mở giải thích, tự phân lớp Google Sheets) ra ngoài Desktop.
 > ```"
 
 ---

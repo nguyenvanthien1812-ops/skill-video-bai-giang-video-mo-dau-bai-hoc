@@ -67,9 +67,10 @@ PHẦN II: CÁCH SỬ DỤNG 3 TÍNH NĂNG TRÊN GOOGLE ANTIGRAVITY
      "Tôi muốn tạo video tương tác"
      hoặc:
      "Hướng dẫn tôi làm video tương tác từ giáo án word / sách giáo khoa"
-   - AI sẽ hiển thị ngay quy trình 4 bước và 4 mẫu câu lệnh copy-paste sẵn (dành cho cả
-     trường hợp ĐÃ CÓ link YouTube hoặc CHƯA CÓ video — làm trọn gói từ Giáo án Word/SGK
-     -> Slide PPTX -> Lồng tiếng AI -> Video MP4 -> Web Video Tương Tác!).
+   - AI sẽ hiển thị ngay quy trình 4 bước và 5 mẫu câu lệnh copy-paste sẵn (dành cho cả
+     trường hợp ĐÃ CÓ link YouTube, ĐÃ CÓ sẵn file Slide PowerPoint .pptx, hoặc CHƯA CÓ video —
+     làm trọn gói từ Giáo án Word/SGK -> Slide PPTX -> Viết lời bình -> Lồng tiếng AI ->
+     Xuất Video MP4 -> Tạo Web Video Tương Tác!).
 
 2. Ưu điểm sư phạm vượt trội của Web Video Tương Tác:
    - Khóa chống tua nhanh 100%, chống YouTube chạy ngầm khi đang mở câu hỏi.

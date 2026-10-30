@@ -68,7 +68,7 @@ Khi giáo viên nói một trong các nhóm câu sau, agent kích hoạt ngay t�
 10. Phân loại thẻ vào 2–4 nhóm kiến thức       [classify] - Chạm thẻ dữ kiện rồi chạm vào Rổ/Nhóm tương ứng để phân loại.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📌 BỘ 5 CÂU LỆNH MẪU TẠO & QUẢN TRỊ VIDEO TƯƠNG TÁC E-LEARNING
+📌 BỘ 6 CÂU LỆNH MẪU TẠO & QUẢN TRỊ VIDEO TƯƠNG TÁC E-LEARNING
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 🟢 MẪU 1 — ĐÃ CÓ VIDEO YOUTUBE, AI TỰ SOẠN CÂU HỎI TƯƠNG TÁC TỪ ĐẦU:
@@ -121,7 +121,18 @@ Khi giáo viên nói một trong các nhóm câu sau, agent kích hoạt ngay t�
       + Trạm 9 (phút 13:15 - Sắp xếp thứ tự): [Câu hỏi | Thứ tự đúng: Bước 1 -> Bước 2 -> Bước 3 | Giải thích]
       + Trạm 10 (phút 14:00 - Phân loại nhóm): [Câu hỏi | Nhóm 1: (các thẻ...); Nhóm 2: (các thẻ...) | Giải thích]"
 
-🔑 MẪU 5 — ĐỔI MẬT KHẨU CHẾ ĐỘ THẦY CÔ CHO BÀI GIẢNG ĐÃ TẠO SẴN:
+🟡 MẪU 5 — ĐÃ CÓ SẴN FILE SLIDE POWERPOINT (.PPTX): VIẾT LỜI BÌNH -> LỒNG TIẾNG AI -> XUẤT VIDEO MP4 -> TẠO WEB VIDEO TƯƠNG TÁC:
+   "Tôi đã có sẵn file bài giảng Slide PowerPoint (.pptx) tại: '[Kéo thả file .pptx vào chat HOẶC giữ Shift + Chuột phải vào file .pptx chọn Copy as path rồi dán vào đây]'.
+    Em hãy thực hiện nối tiếp trọn gói từ file Slide này giúp tôi (Viết lời bình -> Lồng tiếng AI -> Xuất Video MP4 -> Tạo Web Video Tương Tác):
+    - Môn & Lớp: [...] - Tên bài học: [...] - Giáo viên & Trường: [...]
+    - Giọng đọc AI lồng tiếng cho Slide: [Cô Hoài My (Nữ miền Bắc truyền cảm) / hoặc Thầy Nam Minh (Nam miền Bắc trầm ấm)]
+    - Hình thức sử dụng Video Tương Tác: [Online qua YouTube + Netlify / hoặc Offline dạy trực tiếp trên TV lớp học]
+    - Link Web App Google Sheets: [Dán link .../exec HOẶC ghi 'Hướng dẫn tôi tạo Sổ điểm Google Sheets']
+    - Mật khẩu Chế độ Thầy Cô: [Nhập mật khẩu riêng, ví dụ: Thien2026]
+    - Các dạng câu hỏi muốn dùng: [Ghi 'Tự phối hợp đa dạng trong 10 dạng' HOẶC ghi tên các dạng muốn có]
+    - Yêu cầu: (1) Đọc các slide trong file .pptx, viết lời bình giảng dạy tự nhiên vào Notes của từng slide và đề xuất [5 - 7] câu hỏi tương tác bám sát slide; (2) Lồng tiếng AI chuẩn phát thanh viên, tự đo mốc giây (_SlideTimeline.json) và kết xuất Video bài giảng Full HD 1080p (.mp4); (3) Căn đúng mốc giây kết thúc từng slide kiến thức trong video vừa xuất để đóng gói Trang Web Video Tương Tác chống tua nhanh hoàn chỉnh ngoài Desktop."
+
+🔑 MẪU 6 — ĐỔI MẬT KHẨU CHẾ ĐỘ THẦY CÔ CHO BÀI GIẢNG ĐÃ TẠO SẴN:
    "Em hãy đổi mật khẩu Chế độ Thầy Cô của bài giảng tại đường dẫn: '[Đường dẫn thư mục Web_Video_Tuong_Tac_... hoặc file index.html]' thành mật khẩu mới là: '[Mật khẩu mới, ví dụ: Toan6@2026]' giúp thầy/cô."
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -189,6 +200,38 @@ Khi giáo viên chưa có sẵn video bài giảng (hoặc muốn nội dung vid
 - **🖥️ Phương án 2 — Dạy & Kiểm tra Offline trực tiếp trên Máy tính / TV cảm ứng lớp học *(Không cần đăng YouTube)*:**
   1. AI copy trực tiếp file `.mp4` vừa xuất vào trong thư mục bài giảng (cùng cấp với `index.html`) và truyền `local_video_path="./Ten_Video.mp4"`, `video_duration=<total_duration_sec từ _SlideTimeline.json>`.
   2. Nhờ kiến trúc **Dual-Engine (`file://` + HTTPS)** tích hợp sẵn trong Master Template, giáo viên chỉ cần copy thư mục đó ra USB hoặc mở thẳng `index.html` trên máy chiếu/TV lớp học là video phát Offline mượt mà 100% kèm đầy đủ khóa chống tua nhanh và các trạm câu hỏi tương tác!
+
+---
+
+### 3. Chi tiết 4 Bước Tự Động Hóa Khép Kín cho Kịch bản C / Mẫu 5 (Đã có sẵn file Slide PowerPoint `.pptx` $\to$ Viết lời bình $\to$ Lồng tiếng AI $\to$ Xuất Video MP4 $\to$ Tạo Web Video Tương Tác)
+
+Khi giáo viên đã có sẵn file trình chiếu `.pptx` và chọn **Mẫu 5**:
+1. **Bước C1 — Đọc nội dung từng Slide & Nạp lời bình giảng dạy vào Notes (`them_loi_binh_pptx.py`):**
+   - Agent chạy:
+     ```bash
+     python scripts/them_loi_binh_pptx.py "<duong_dan_file_slide.pptx>"
+     ```
+     để trích xuất toàn bộ nội dung văn bản trên từng slide và kiểm tra xem slide nào đã có hay chưa có Speaker Notes.
+   - Agent biên soạn lời giảng truyền cảm, tự nhiên bằng văn nói (chuyển mọi ký hiệu Toán/Lý/Hóa sang cách đọc tiếng Việt chuẩn xác để giọng AI đọc mượt mà) và nạp vào từng slide:
+     ```bash
+     python scripts/them_loi_binh_pptx.py "<duong_dan_file_slide.pptx>" --inject-json "<file_notes.json>"
+     ```
+     (xuất ra file `<TenFile>_CoLoiBinh.pptx`), đồng thời thiết kế bộ `5 - 7` câu hỏi tương tác bám sát đúng nội dung các slide kiến thức.
+2. **Bước C2 — Lồng tiếng AI phát thanh viên & Xuất bảng mốc giây từng Slide (`long_tieng_pptx.py`):**
+   - Agent chạy:
+     ```bash
+     # --voice 1: Cô Hoài My (Nữ miền Bắc) | --voice 2: Thầy Nam Minh (Nam miền Bắc)
+     python scripts/long_tieng_pptx.py "<duong_dan_CoLoiBinh.pptx>" --voice 1
+     ```
+   - Thu được file `<TenFile>_CoLoiBinh_DaLongTieng.pptx` và bảng mốc giây **`<TenFile>_CoLoiBinh_DaLongTieng_SlideTimeline.json`** ghi rõ `end_sec` & `end_mmss` của từng slide.
+3. **Bước C3 — Kết xuất ra file Video bài giảng Full HD 1080p (`xuat_video_pptx.py`):**
+   - Agent chạy:
+     ```bash
+     python scripts/xuat_video_pptx.py "<duong_dan_DaLongTieng.pptx>"
+     ```
+   - Thu được file `<TenFile>_CoLoiBinh_DaLongTieng_Video.mp4` chuẩn Full HD `1920x1080`.
+4. **Bước C4 — Đóng gói thành Trang Web Video Tương Tác E-Learning (`interactive_video_builder.py`):**
+   - Agent lấy chính xác mốc `end_sec` của các slide chốt kiến thức trong `_SlideTimeline.json` làm thời điểm dừng `time` cho từng trạm câu hỏi trong `checkpoints`, rồi gọi `build_interactive_video_html()` + `package_netlify_folder()` xuất thư mục `Web_Video_Tuong_Tac_...` ra ngoài **Desktop** (hỗ trợ cả phát Online qua YouTube + Netlify hoặc chạy Offline trực tiếp file `.mp4` trên TV lớp học).
 
 ---
 
