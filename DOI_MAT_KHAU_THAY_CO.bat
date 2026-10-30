@@ -1,5 +1,6 @@
 @echo off
 chcp 65001 >nul
+setlocal enabledelayedexpansion
 title Doi Mat Khau Che Do Thay Co (1-Click) - Video Tuong Tac E-Learning
 
 echo.
@@ -9,32 +10,48 @@ echo   Dành cho bài giảng Video Tương Tác E-Learning
 echo ====================================================================
 echo.
 
-set "PYTHON_EXE=python"
-py -c "import sys" >nul 2>nul
-if not errorlevel 1 set "PYTHON_EXE=py"
+set "PYTHON_EXE="
+py -c "import sys" >nul 2>nul && set "PYTHON_EXE=py"
+if "%PYTHON_EXE%"=="" python -c "import sys" >nul 2>nul && set "PYTHON_EXE=python"
+if "%PYTHON_EXE%"=="" (
+    for /d %%D in ("%LOCALAPPDATA%\Programs\Python\Python3*") do if exist "%%D\python.exe" set "PYTHON_EXE=%%D\python.exe"
+)
+if "%PYTHON_EXE%"=="" (
+    for /d %%D in ("C:\Program Files\Python3*") do if exist "%%D\python.exe" set "PYTHON_EXE=%%D\python.exe"
+)
+if "%PYTHON_EXE%"=="" (
+    for /d %%D in ("C:\Python3*") do if exist "%%D\python.exe" set "PYTHON_EXE=%%D\python.exe"
+)
 
-set "TARGET_PATH=%~1"
-if not "%TARGET_PATH%"=="" goto :ASK_PWD
-
-echo 👉 CACH DUNG NHANH:
-echo    Thay/Co co the keo tha truc tiep THU MUC bai giang (hoac file index.html)
-echo    vao bieu tuong file DOI_MAT_KHAU_THAY_CO.bat nay, hoac dan duong dan o duoi:
-echo.
-set /p TARGET_PATH="📂 Dan duong dan thu muc bai giang (hoac file index.html): "
-
-:ASK_PWD
-if "%TARGET_PATH%"=="" (
-    echo [!] Chua nhap duong dan bai giang.
+if "%PYTHON_EXE%"=="" (
+    echo [!] Không tìm thấy Python trên máy tính! Vui lòng chạy 1_CAI_DAT_MOI_TRUONG.bat trước.
     pause
     exit /b 1
 )
 
+set "TARGET_PATH=%~1"
+if not "%TARGET_PATH%"=="" goto :ASK_PWD
+
+echo 👉 CÁCH DÙNG NHANH:
+echo    Thầy/Cô kéo thả trực tiếp THƯ MỤC bài giảng (hoặc file index.html)
+echo    vào biểu tượng file DOI_MAT_KHAU_THAY_CO.bat này, hoặc dán đường dẫn ở dưới:
 echo.
-echo [*] Bai giang duoc chon: %TARGET_PATH%
-set /p NEW_PWD="🔑 Nhap MAT KHAU MOI cho Che do Thay Co (VD: Thien2026): "
+set /p "TARGET_PATH=📂 Dán đường dẫn thư mục bài giảng (hoặc file index.html): "
+
+:ASK_PWD
+if "%TARGET_PATH%"=="" (
+    echo [!] Chưa nhập đường dẫn bài giảng.
+    pause
+    exit /b 1
+)
+set "TARGET_PATH=%TARGET_PATH:"=%"
+
+echo.
+echo [*] Bài giảng được chọn: %TARGET_PATH%
+set /p "NEW_PWD=🔑 Nhập MẬT KHẨU MỚI cho Chế độ Thầy Cô (VD: Thien2026): "
 
 if "%NEW_PWD%"=="" (
-    echo [!] Mat khau moi khong duoc de trong!
+    echo [!] Mật khẩu mới không được để trống!
     pause
     exit /b 1
 )

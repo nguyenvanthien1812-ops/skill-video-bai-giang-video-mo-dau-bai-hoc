@@ -1,20 +1,21 @@
 {
   "name": "tao-slide-va-video-khoi-dong",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "release_date": "2026-10-30",
   "description": "Bộ Tiện Ích Sư Phạm 3-Trong-1 GDPT 2018: (1) Soạn Slide PowerPoint 16:9 chuẩn sư phạm từ Giáo án Word/SGK -> Viết lời bình Notes -> Lồng tiếng AI phát thanh viên -> Xuất Video bài giảng MP4 Full HD 1080p; (2) Tạo Web Video Tương Tác E-Learning chống tua nhanh 100%, 4 dạng câu hỏi Mastery Gate >= 80%, tự phân lớp Google Sheets, bảo mật & đổi mật khẩu Chế độ Thầy Cô 1-click kèm hướng dẫn đưa lên Netlify; (3) Tạo kịch bản & Prompt Veo 3 Video khởi động bài học 60-80s đồng nhất nhân vật.",
   "author": "Thầy Nguyễn Văn Thiện - Trường THCS Ứng Hòe",
   "github_repo": "nguyenvanthien1812-ops/skill-video-bai-giang-video-mo-dau-bai-hoc",
   "changelog": {
+    "2.0.1": [
+      "HOÀN THIỆN 100% THƯ VIỆN CÀI ĐẶT 1-CLICK CHO GIÁO VIÊN (1_CAI_DAT_MOI_TRUONG.bat & requirements.txt): Bổ sung đầy đủ 16 thư viện chuẩn (python-pptx, edge-tts, mutagen, pillow, lxml, latex2mathml, matplotlib, numpy, python-docx, docx2txt, pymupdf, pypdf, openpyxl, requests, certifi, cryptography), tự động quét nhận diện Python ngay sau khi cài mới và tự động nạp thẳng vào Google Antigravity.",
+      "KHẮC PHỤC TRIỆT ĐỂ LỖI ĐƯỜNG DẪN TIẾNG VIỆT CÓ DẤU KHI LỒNG TIẾNG AI & XUẤT VIDEO MP4 (scripts/long_tieng_pptx.py & scripts/xuat_video_pptx.py): Ghi kịch bản PowerShell chuẩn UTF-8 BOM (utf-8-sig) kết hợp chuỗi nháy đơn an toàn và đo chính xác 100% thời lượng từng file âm thanh MP3 qua mutagen + bộ đọc khung MPEG dự phòng.",
+      "NÂNG CẤP TRỌN BỘ DỰNG SLIDE & BÓC TÁCH SGK (scripts/tao_slide_chuan.py, scripts/boc_tach_tai_lieu.py, scripts/them_loi_binh_pptx.py, scripts/patch_fonts.py): Sửa lỗi ghi Speaker Notes cho slide mới tạo, tự co giãn ảnh giữ nguyên tỷ lệ không méo hình SGK, bổ sung chụp trang PDF 200 DPI dự phòng cho SGK scan/vector, hỗ trợ đủ 7 Theme màu sư phạm và đọc cả chữ trong bảng biểu/nhóm hình."
+    ],
     "2.0.0": [
       "NÂNG CẤP LÊN BỘ TIỆN ÍCH 3-TRONG-1 HOÀN CHỈNH (SLIDE PPTX -> LỜI BÌNH & VIDEO MP4 -> VIDEO TƯƠNG TÁC E-LEARNING + VIDEO KHỞI ĐỘNG VEO 3): Tích hợp khép kín toàn bộ quy trình từ file Giáo án Word (.docx) hoặc Sách giáo khoa (PDF/ảnh chụp) -> Soạn Slide PowerPoint 16:9 -> Viết lời bình Notes -> Lồng tiếng AI tự đo mốc giây (_SlideTimeline.json) -> Xuất Video bài giảng MP4 Full HD -> Đóng gói Trang Web Video Tương Tác E-Learning đưa lên Netlify.",
       "TÍCH HỢP MASTER TEMPLATE & BUILDER VIDEO TƯƠNG TÁC E-LEARNING (templates/video_tuong_tac_template.html & scripts/interactive_video_builder.py): Khóa chống tua nhanh 100%, 4 dạng câu hỏi tương tác (Trắc nghiệm MCQ, Đúng/Sai 1-chạm, Điền đáp án số, Chạm/Ghép thẻ), tự tách tab từng lớp (6A, 6B...) trên Google Sheets.",
       "CƠ CHẾ SƯ PHẠM MASTERY GATE & CHUẨN HOÀN THÀNH >= 80%: Học sinh trả lời SAI tuyệt đối không lộ hộp Giải thích (chỉ hiện nút Xem lại 30s bài giảng); chỉ khi tự làm ĐÚNG mới mở khóa Hướng dẫn & Giải thích, cộng trọn +1 điểm hoàn thành trạm và mở nút Tiếp tục bài học (6s).",
-      "BẢO MẬT & ĐỔI MẬT KHẨU CHẾ ĐỘ THẦY CÔ 1-CLICK (DOI_MAT_KHAU_THAY_CO.bat & --set-password): Ẩn hoàn toàn gợi ý mật khẩu trên giao diện học sinh (#teacherPwd), hỗ trợ đặt mật khẩu riêng ngay từ đầu hoặc đổi mật khẩu trong 1 giây kèm hướng dẫn 4 tình huống chi tiết.",
-      "HƯỚNG DẪN BƯỚC TIẾP THEO ĐƯA LÊN WEB NETLIFY BẮT BUỘC SAU MỌI CÂU LỆNH & CẬP NHẬT TỰ ĐỘNG TỪ GITHUB (3_CAP_NHAT_TINH_NANG_MOI.bat, DAY_LEN_GITHUB_MOI.bat, scripts/updater.py): Tự động hướng dẫn 5 bước đưa bài mới lên Netlify hoặc 4 bước cập nhật tab Deploys giữ nguyên 100% đường link Zalo đã gửi học sinh."
-    ],
-    "1.0.0": [
-      "Phát hành phiên bản đầu tiên: Tạo kịch bản & Prompt Veo 3 Video khởi động bài học 60-80s đồng nhất nhân vật + Soạn Slide PowerPoint 16:9 chuẩn sư phạm GDPT 2018, lồng tiếng AI Edge-TTS và xuất Video MP4 Full HD."
+      "BẢO MẬT & ĐỔI MẬT KHẨU CHẾ ĐỘ THẦY CÔ 1-CLICK (DOI_MAT_KHAU_THAY_CO.bat & --set-password): Ẩn hoàn toàn gợi ý mật khẩu trên giao diện học sinh (#teacherPwd), hỗ trợ đặt mật khẩu riêng ngay từ đầu hoặc đổi mật khẩu trong 1 giây kèm hướng dẫn 4 tình huống chi tiết."
     ]
   }
 }

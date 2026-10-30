@@ -1,31 +1,31 @@
 @echo off
+chcp 65001 >nul
 setlocal enabledelayedexpansion
 title Xuat Video Bai Giang MP4 Tu Slide PowerPoint - Thay Thien
 
 echo.
 echo ====================================================================
-echo      XUAT VIDEO BAI GIANG MP4 TU FILE POWERPOINT (.PPTX)
-echo           Tac gia: Thay Nguyen Van Thien - THCS Ung Hoe
+echo   🎬 XUẤT VIDEO BÀI GIẢNG MP4 FULL HD TỪ FILE POWERPOINT (.PPTX)
+echo      Tác giả: Thầy Nguyễn Văn Thiện - THCS Ứng Hòe
 echo ====================================================================
 echo.
 
 set "PPTX_FILE=%~1"
 
 if "%PPTX_FILE%"=="" (
-    echo [HUONG DAN SU DUNG]:
-    echo   1. Thay/Co hay KEO THA file PowerPoint (.pptx) vao file bat nay.
-    echo   2. Hoac nhap duong dan file PowerPoint vao ben duoi:
+    echo [HƯỚNG DẪN SỬ DỤNG]:
+    echo   1. Thầy/Cô KÉO THẢ file PowerPoint (.pptx) vào file .bat này.
+    echo   2. Hoặc dán đường dẫn file PowerPoint vào bên dưới:
     echo.
-    set /p "PPTX_FILE=[*] Nhap duong dan file .pptx: "
+    set /p "PPTX_FILE=[*] Nhập đường dẫn file .pptx: "
 )
 
 if "%PPTX_FILE%"=="" (
-    echo [!] Chua co file PowerPoint de xuat video.
+    echo [!] Chưa có file PowerPoint để xuất video.
     pause
     exit /b 1
 )
 
-:: Xoa dau ngoac kep neu co
 set "PPTX_FILE=%PPTX_FILE:"=%"
 
 set "PYTHON_EXE="
@@ -42,8 +42,8 @@ if "%PYTHON_EXE%"=="" (
 )
 
 if "%PYTHON_EXE%"=="" (
-    echo [!] Khong tim thay Python tren may tinh!
-    echo     Vui long chay file cai_dat_tu_dong.bat truoc de cai dat.
+    echo [!] Không tìm thấy Python trên máy tính!
+    echo     Vui lòng chạy file 1_CAI_DAT_MOI_TRUONG.bat trước để cài đặt.
     pause
     exit /b 1
 )
@@ -55,20 +55,15 @@ if exist "%~dp0scripts\xuat_video_pptx.py" (
     set "SCRIPT_FILE=%USERPROFILE%\.gemini\config\skills\tao-slide-va-video-khoi-dong\scripts\xuat_video_pptx.py"
 ) else if exist "%USERPROFILE%\.gemini\antigravity\skills\tao-slide-va-video-khoi-dong\scripts\xuat_video_pptx.py" (
     set "SCRIPT_FILE=%USERPROFILE%\.gemini\antigravity\skills\tao-slide-va-video-khoi-dong\scripts\xuat_video_pptx.py"
-) else if exist "%USERPROFILE%\.gemini\config\skills\tao-slide-bai-giang\scripts\xuat_video_pptx.py" (
-    set "SCRIPT_FILE=%USERPROFILE%\.gemini\config\skills\tao-slide-bai-giang\scripts\xuat_video_pptx.py"
 )
 
 if "%SCRIPT_FILE%"=="" (
-    echo [X] Khong tim thay script xuat_video_pptx.py!
+    echo [X] Không tìm thấy script xuat_video_pptx.py!
     pause
     exit /b 1
 )
 
-echo [*] Dang tien hanh xuat video tu file: %PPTX_FILE%
-echo [*] Vui long cho trong giay lat de PowerPoint render video...
 echo.
-
 "%PYTHON_EXE%" "%SCRIPT_FILE%" "%PPTX_FILE%"
 
 echo.

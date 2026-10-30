@@ -4,7 +4,7 @@ title Cai Dat Tu Dong 1-Click - Slide PPTX, Video MP4 & Video Tuong Tac E-Learni
 
 echo.
 echo ====================================================================
-echo   🎉 HỆ THỐNG CÀI ĐẶT TỰ ĐỘNG 1-CLICK DÀNH CHO GIÁO VIÊN (v2.0.0)
+echo   🎉 HỆ THỐNG CÀI ĐẶT TỰ ĐỘNG 1-CLICK DÀNH CHO GIÁO VIÊN (v2.0.1)
 echo   Bộ Tiện Ích 3-Trong-1:
 echo     (1) Soạn Slide PPTX -^> Lời Bình -^> Lồng Tiếng AI -^> Video MP4
 echo     (2) Tạo Trang Web Video Tương Tác E-Learning ^& Đưa Lên Netlify
@@ -16,7 +16,7 @@ echo.
 set "PYTHON_EXE="
 
 :: ─── BƯỚC 1: KIỂM TRA MÔI TRƯỜNG PYTHON ───────────────────────────
-echo [*] Buoc 1/2: Dang kiem tra moi truong Python tren may tinh cua Thay/Co...
+echo [*] Buoc 1/3: Dang kiem tra moi truong Python tren may tinh cua Thay/Co...
 
 py -c "import sys" >nul 2>nul
 if not errorlevel 1 (
@@ -63,49 +63,75 @@ for /d %%D in ("C:\Python3*") do (
     )
 )
 
-:: Nếu máy tính chưa có Python -> Tự động tải về cài đặt âm thầm
-echo [!] May tinh chua co Python. Dang tu dong tai Python 3.11 ve cai dat...
-set "PY_URL=https://www.python.org/ftp/python/3.11.9/python-3.11.9-amd64.exe"
-set "PY_INSTALLER=%TEMP%\python-installer.exe"
+:: Nếu máy tính chưa có Python -> Tự động tải về cài đặt ngầm
+echo [!] May tinh chua co Python. Dang tu dong tai Python 3.12 ve cai dat...
+set "PY_URL=https://www.python.org/ftp/python/3.12.6/python-3.12.6-amd64.exe"
+set "PY_INSTALLER=%TEMP%\python_installer_auto.exe"
 
-powershell -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; (New-Object Net.WebClient).DownloadFile('%PY_URL%', '%PY_INSTALLER%')"
-if exist "%PY_INSTALLER%" (
-    echo [*] Dang cai dat Python che do tu dong...
-    start /wait "" "%PY_INSTALLER%" /quiet InstallAllUsers=0 PrependPath=1 Include_test=0
-    del /f /q "%PY_INSTALLER%" >nul 2>nul
+if exist "%SystemRoot%\System32\curl.exe" (
+    curl.exe -L -o "%PY_INSTALLER%" "%PY_URL%"
+) else (
+    powershell -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; (New-Object Net.WebClient).DownloadFile('%PY_URL%', '%PY_INSTALLER%')"
 )
 
-set "PYTHON_EXE=python"
+if not exist "%PY_INSTALLER%" (
+    echo [X] Khong the tai Python tu dong! Vui long kiem tra ket noi mang Internet.
+    pause
+    exit /b 1
+)
+
+echo [*] Dang cai dat Python che do tu dong (vui long cho 30-60 giay)...
+start /wait "" "%PY_INSTALLER%" /quiet InstallAllUsers=0 PrependPath=1 Include_test=0 Include_pip=1 SimpleInstall=1
+del /f /q "%PY_INSTALLER%" >nul 2>nul
+
+for /d %%D in ("%LOCALAPPDATA%\Programs\Python\Python3*") do (
+    if exist "%%D\python.exe" (
+        set "PYTHON_EXE=%%D\python.exe"
+        set "PATH=%%D;%%D\Scripts;%PATH%"
+        goto :PYTHON_READY
+    )
+)
+py -c "import sys" >nul 2>nul && set "PYTHON_EXE=py"
+if "%PYTHON_EXE%"=="" python -c "import sys" >nul 2>nul && set "PYTHON_EXE=python"
+
+if "%PYTHON_EXE%"=="" (
+    echo [!] Da cai Python xong nhung can mo lai cua so. Vui long nhap dup lai file nay!
+    pause
+    exit /b 1
+)
 
 :PYTHON_READY
-echo [OK] Python da san sang!
+echo [OK] Python da san sang: %PYTHON_EXE%
+"%PYTHON_EXE%" -c "import sys; print('     Phien ban Python:', sys.version.split()[0])"
 
-:: ─── BƯỚC 2: CÀI ĐẶT CÁC THƯ VIỆN BỔ TRỢ CẦN THIẾT ─────────────────
+:: ─── BƯỚC 2: CÀI ĐẶT ĐẦY ĐỦ 100% THƯ VIỆN CHO GIÁO VIÊN ───────────
 echo.
-echo [*] Buoc 2/2: Dang tu dong cai dat cac thu vien chuyen dung:
-echo     - python-pptx (Tao va xu ly slide PowerPoint 16:9)
-echo     - edge-tts (Long tieng AI giong phat thanh vien mien phi)
-echo     - pillow (Xu ly hinh anh sac net cho slide)
-echo     - lxml (Xu ly XML DrawingML va cong thuc toan OMML)
-echo     - python-docx, docx2txt (Doc va boc tach anh tu file Word giao an)
-echo     - pymupdf, pypdf (Doc va boc tach anh tu sach giao khoa PDF)
-echo     - requests (Ket noi cap nhat & tim anh khoa hoc)
+echo [*] Buoc 2/3: Dang tu dong cai dat tron bo thu vien chuyen dung:
+echo     - python-pptx, lxml, latex2mathml (Tao slide PowerPoint 16:9 ^& cong thuc Toan OMML)
+echo     - edge-tts, mutagen (Long tieng AI Co Hoai My/Thay Nam Minh ^& do chuan moc giay MP3)
+echo     - pillow, matplotlib, numpy (Xu ly anh sac net ^& ve do thi/hinh hoc 300 DPI)
+echo     - python-docx, docx2txt, pymupdf, pypdf, openpyxl (Doc Giao an Word, SGK PDF ^& Excel)
+echo     - requests, certifi, cryptography (Ket noi Internet ^& cap nhat tu dong tu GitHub)
 echo.
 
-"%PYTHON_EXE%" -m pip install --upgrade pip --quiet
-"%PYTHON_EXE%" -m pip install python-pptx edge-tts pillow lxml requests python-docx docx2txt pymupdf pypdf cryptography --quiet
+"%PYTHON_EXE%" -m pip install --upgrade pip --quiet --no-warn-script-location
+"%PYTHON_EXE%" -m pip install python-pptx edge-tts mutagen pillow lxml latex2mathml matplotlib numpy python-docx docx2txt pymupdf pypdf openpyxl requests certifi cryptography --no-warn-script-location
 
-echo [*] Kiem tra nhanh moi truong sau khi cai dat...
-"%PYTHON_EXE%" -c "import pptx, edge_tts, PIL, lxml, requests; print('    [OK] Thu vien cot loi san sang!')"
+echo.
+echo [*] Kiem tra toan ven cac thu vien cot loi...
+"%PYTHON_EXE%" -c "import pptx, edge_tts, mutagen, PIL, lxml, latex2mathml, matplotlib, docx, fitz, pypdf, openpyxl, requests; print('    [OK] 100%% thu vien da san sang hoat dong!')"
+
+:: ─── BƯỚC 3: TỰ ĐỘNG NẠP LUÔN VÀO GOOGLE ANTIGRAVITY ──────────────
+echo.
+echo [*] Buoc 3/3: Tu dong nap tien ich vao Google Antigravity...
+"%PYTHON_EXE%" -c "import sys; sys.path.insert(0, r'%~dp0scripts'); from updater import sync_to_antigravity_global; sync_to_antigravity_global(r'%~dp0'); print('    [OK] Da nap tien ich vao Google Antigravity!')" 2>nul
 
 echo.
 echo ====================================================================
-echo  🎉 CHÚC MỪNG: CÀI ĐẶT MÔI TRƯỜNG THÀNH CÔNG 100%!
+echo  🎉 CHÚC MỪNG: CÀI ĐẶT MÔI TRƯỜNG ^& NẠP TIỆN ÍCH THÀNH CÔNG 100%!
 echo ====================================================================
 echo.
-echo 👉 Buoc tiep theo:
-echo    Thay/Co vui long nhap dup chuot vao file:
-echo    "2_NAP_VAO_ANTIGRAVITY.bat"
-echo    de nap tien ich vao Google Antigravity va su dung ngay lap tuc!
+echo 👉 Thay/Co co the mo ngay Google Antigravity va go lenh su dung
+echo    (hoac nhap dup "2_NAP_VAO_ANTIGRAVITY.bat" bat cu khi nao can dong bo lai).
 echo.
 pause
