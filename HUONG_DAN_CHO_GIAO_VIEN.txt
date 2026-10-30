@@ -1,5 +1,5 @@
 ================================================================================
-  HƯỚNG DẪN SỬ DỤNG BỘ TIỆN ÍCH SƯ PHẠM 3-TRONG-1 DÀNH CHO GIÁO VIÊN (v2.0.0)
+  HƯỚNG DẪN SỬ DỤNG BỘ TIỆN ÍCH SƯ PHẠM 3-TRONG-1 DÀNH CHO GIÁO VIÊN (v2.1.0)
   (1) SOẠN SLIDE POWERPOINT (PPTX 16:9) -> LỜI BÌNH -> LỒNG TIẾNG AI -> VIDEO MP4
   (2) TẠO WEB VIDEO TƯƠNG TÁC E-LEARNING CHỐNG TUA NHANH & ĐƯA LÊN NETLIFY
   (3) TẠO KỊCH BẢN & PROMPT VEO 3 CHO VIDEO KHỞI ĐỘNG BÀI HỌC (60-80 GIÂY)
@@ -8,7 +8,7 @@
 
 Kính gửi Quý Thầy/Cô,
 
-Bộ tiện ích v2.0.0 được đóng gói độc lập và tự động hóa khép kín 100%, giúp Thầy/Cô
+Bộ tiện ích v2.1.0 được đóng gói độc lập và tự động hóa khép kín 100%, giúp Thầy/Cô
 đi trọn vẹn chuỗi bài giảng số hiện đại theo Chương trình GDPT 2018 & CV 5512:
   [Giáo án Word / SGK PDF]
        --> [Slide PowerPoint .pptx 16:9 chuẩn sư phạm]
@@ -73,7 +73,19 @@ PHẦN II: CÁCH SỬ DỤNG 3 TÍNH NĂNG TRÊN GOOGLE ANTIGRAVITY
 
 2. Ưu điểm sư phạm vượt trội của Web Video Tương Tác:
    - Khóa chống tua nhanh 100%, chống YouTube chạy ngầm khi đang mở câu hỏi.
-   - 10 dạng câu hỏi tương tác chuẩn GDPT 2018: Trắc nghiệm 4 lựa chọn (mcq), Đúng/Sai đơn (tf), Đúng/Sai 4 ý a-b-c-d (tf_group), Chọn nhiều đáp án đúng (multi), Điền đáp án số/chữ (fill), Điền khuyết nhiều chỗ trống (cloze), Ghép thẻ (drag), Nối cặp 2 cột A-B (match), Sắp xếp thứ tự (order), Phân loại nhóm (classify).
+   - Trọn bộ 10 dạng câu hỏi tương tác chuẩn GDPT 2018 (Thầy/Cô gọi tên tiếng Việt dạng nào cũng được):
+       (1) Trắc nghiệm 1 đáp án đúng (A, B, C, D)
+       (2) Đúng / Sai đơn (1 nhận định)
+       (3) Đúng / Sai đa mệnh đề (4 ý a, b, c, d chuẩn Phần II đề thi mới Bộ GD&ĐT)
+       (4) Trắc nghiệm nhiều đáp án đúng (tích ô vuông Checkbox)
+       (5) Điền đáp án ngắn / Điền số
+       (6) Điền khuyết nhiều chỗ trống (1), (2), (3) (chạm từ gợi ý hoặc gõ trực tiếp)
+       (7) Chạm / Ghép thẻ vào ô kết quả
+       (8) Nối cặp tương ứng 2 cột (Cột A <-> Cột B)
+       (9) Sắp xếp thứ tự quy trình / các bước giải / dãy số
+       (10) Phân loại thẻ vào 2-4 nhóm kiến thức
+     -> Khi tạo bài, Thầy/Cô có thể bảo AI "Tự phối hợp đa dạng từ 10 dạng" HOẶC chỉ định rõ:
+        "Cho tôi 2 câu Trắc nghiệm, 1 câu Đúng/Sai 4 ý a-b-c-d, 1 câu Nối cột A-B, 1 câu Phân loại nhóm..."!
    - Cơ chế Mastery Gate: Học sinh trả lời SAI tuyệt đối KHÔNG hiện lời giải thích (chỉ hiện nút
      "Xem lại 30s bài giảng"); chỉ khi tự trả lời ĐÚNG mới hiện "Hướng dẫn & Giải thích" và cộng +1đ
      để mọi học sinh kiên trì học hết bài đều đạt chuẩn Hoàn thành >= 80%.
