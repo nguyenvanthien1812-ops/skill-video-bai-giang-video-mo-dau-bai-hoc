@@ -3,7 +3,7 @@ name: tao-slide-va-video-khoi-dong
 description: >-
   Bộ công cụ sư phạm 3-trong-1 khép kín dành cho giáo viên phổ thông GDPT 2018:
   (1) Soạn slide PowerPoint (PPTX 16:9) bài giảng chuẩn mực sư phạm từ Giáo án Word, SGK, PDF hay hình ảnh (tự lọc bỏ slide hành chính, đi thẳng vào trục 3 bước: Quan sát kênh hình -> Thảo luận phát vấn -> Em cần ghi nhớ chốt ghi vở, font Times New Roman, công thức Toán Native OMML) -> Viết lời bình giảng dạy vào Notes -> Lồng tiếng AI phát thanh viên (Edge-TTS tự đo mốc giây _SlideTimeline.json) -> Xuất video bài giảng MP4 Full HD 1080p;
-  (2) Tạo Trang Web Video Tương Tác E-Learning từ Video MP4 vừa xuất từ PPTX, từ Link YouTube, hoặc làm trọn gói từ Giáo án Word (.docx) / Sách giáo khoa (PDF/ảnh chụp) (chống tua nhanh 100%, 4 dạng câu hỏi nhúng, cơ chế Mastery Gate trả lời sai không lộ giải thích - trả lời đúng mới hiện giải thích & đạt chuẩn hoàn thành >= 80%, tự tách tab lớp trên Google Sheets, bảo mật & đổi mật khẩu Chế độ Thầy Cô 1-click, kèm hướng dẫn bước tiếp theo đưa lên Web Netlify);
+  (2) Tạo Trang Web Video Tương Tác E-Learning từ Video MP4 vừa xuất từ PPTX, từ Link YouTube, hoặc làm trọn gói từ Giáo án Word (.docx) / Sách giáo khoa (PDF/ảnh chụp) (chống tua nhanh 100%, 10 dạng câu hỏi tương tác chuẩn GDPT 2018, cơ chế Mastery Gate trả lời sai không lộ giải thích - trả lời đúng mới hiện giải thích & đạt chuẩn hoàn thành >= 80%, tự tách tab lớp trên Google Sheets, bảo mật & đổi mật khẩu Chế độ Thầy Cô 1-click, kèm hướng dẫn bước tiếp theo đưa lên Web Netlify);
   (3) Tạo kịch bản & prompt Veo 3 cho video khởi động bài học (warm-up video) 60–80 giây đồng nhất nhân vật.
   Kích hoạt khi giáo viên yêu cầu:
   - Về Soạn Slide PPTX, Lời bình & Xuất Video từ PPTX: "tôi muốn làm pptx", "tôi muốn tạo pptx", "tôi muốn làm slide", "tôi muốn tạo slide", "làm pptx", "tạo pptx", "làm slide", "tạo slide", "soạn slide", "tạo slide bài giảng", "làm pptx từ giáo án", "soạn slide khtn", "làm slide bài dạy", "tạo bài giảng pptx", "làm slide từ pdf", "tạo slide chuẩn sư phạm", "soạn pptx bài giảng", "làm pptx từ sách giáo khoa", "soạn bài giảng powerpoint", "tôi có kịch bản slide rồi", "làm theo kịch bản của tôi", "tôi đã soạn sẵn nội dung", "chỉ cần chèn ảnh vào slide", "làm slide toán", "soạn slide môn toán", "tạo slide công thức toán", "slide toán omml", "công thức toán slide", "soạn bài giảng toán", "tôi có file pptx rồi tôi muốn viết lời bình", "tôi có file pptx rồi", "tôi muốn viết lời bình", "thêm lời bình cho slide", "viết lời bình pptx", "viết lời bình cho slide", "lồng tiếng pptx", "xuất video từ pptx", "làm video bài giảng từ pptx".
@@ -21,9 +21,9 @@ Chào mừng Thầy/Cô đến với **Bộ Tiện Ích Sư Phạm 3-Trong-1 (Ph
 2. **🎓 TÍNH NĂNG 2 (PHẦN II): SOẠN SLIDE POWERPOINT (PPTX 16:9) CHUẨN SƯ PHẠM → VIẾT LỜI BÌNH → LỒNG TIẾNG AI → XUẤT VIDEO BÀI GIẢNG MP4 FULL HD**
    Tự động bóc tách nội dung & hình ảnh gốc từ Giáo án Word (`.docx`) / Sách giáo khoa (`.pdf` / ảnh chụp), loại bỏ 100% slide hành chính rườm rà, tổ chức theo trục trực quan 3 bước (*Quan sát Kênh hình / SGK* $\to$ *Câu hỏi thảo luận phát vấn* $\to$ *Khung Em cần ghi nhớ*), xuất file `.pptx` 16:9 font Times New Roman + công thức Toán Native OMML, viết lời bình vào Notes, lồng tiếng AI phát thanh viên (tự đo chính xác mốc giây từng slide vào `_SlideTimeline.json`) và kết xuất Video `.mp4` Full HD 1080p!
 
-3. **🌐 TÍNH NĂNG 3 (PHẦN III): TẠO TRANG WEB VIDEO TƯƠNG TÁC E-LEARNING & ĐƯA LÊN NETLIFY (CHỐNG TUA NHANH + 4 DẠNG CÂU HỎI NHÚNG + GOOGLE SHEETS TỰ TÁCH LỚP)**
+3. **🌐 TÍNH NĂNG 3 (PHẦN III): TẠO TRANG WEB VIDEO TƯƠNG TÁC E-LEARNING & ĐƯA LÊN NETLIFY (CHỐNG TUA NHANH + 10 DẠNG CÂU HỎI NHÚNG CHUẨN GDPT 2018 + GOOGLE SHEETS TỰ TÁCH LỚP)**
    Biến Video bài giảng `.mp4` vừa xuất từ PPTX, Link YouTube có sẵn, hoặc làm mới trọn gói từ Giáo án Word / SGK thành Trang Web học tập tương tác chuẩn sư phạm:
-   - Khóa chống tua nhanh 100%; 4 dạng câu hỏi nhúng (`Trắc nghiệm MCQ`, `Đúng/Sai 1-chạm`, `Điền đáp án số`, `Chạm/Ghép thẻ`).
+   - Khóa chống tua nhanh 100%; 10 dạng câu hỏi tương tác chuẩn GDPT 2018 (`Trắc nghiệm MCQ`, `Đúng/Sai đơn`, `Đúng/Sai 4 ý a-b-c-d`, `Chọn nhiều đáp án Checkbox`, `Điền số/chữ ngắn`, `Điền khuyết nhiều chỗ trống`, `Chạm/Ghép thẻ`, `Nối cặp 2 cột A-B`, `Sắp xếp thứ tự`, `Phân loại vào nhóm`).
    - Cơ chế **Mastery Gate**: Học sinh trả lời **SAI tuyệt đối không lộ lời giải thích** (chỉ hiện nút `⏪ Xem lại 30s bài giảng`); chỉ khi tự làm **ĐÚNG** mới mở `💡 Hướng dẫn & Giải thích` và cộng trọn `+1 điểm` đạt chuẩn Hoàn thành $\ge 80\%$.
    - Tự tách tab từng lớp (`6A`, `6B`...) trên Sổ điểm Google Sheets; bảo mật & đổi mật khẩu Chế độ Thầy Cô 1-click (`DOI_MAT_KHAU_THAY_CO.bat`); kèm hướng dẫn cầm tay chỉ việc đưa lên Web Netlify miễn phí!
    - 📖 Tài liệu kỹ thuật chi tiết: xem [`references/tao_video_tuong_tac.md`](./references/tao_video_tuong_tac.md).
@@ -381,7 +381,7 @@ Khi tạo file PPTX trên máy tính giáo viên:
 
 Khi giáo viên gõ câu lệnh mở đầu chưa kèm thông tin chi tiết, AI **LẬP TỨC** xuất phản hồi cầm tay chỉ việc từ đầu (A $\to$ Z):
 
-> "Dạ chào Thầy/Cô! Tính năng **Tạo Video Tương Tác E-Learning (Chống Tua Nhanh + 4 Dạng Câu Hỏi Nhúng + Tự Phân Tab Lớp Trên Google Sheets + Chuẩn Đạt $\ge$ 80%)** giúp Thầy/Cô tạo trang học tập trực tuyến chuẩn sư phạm: học sinh **không thể tua nhanh**, trả lời **SAI không bị lộ lời giải thích** (chỉ khi tự làm **ĐÚNG** mới mở giải thích và cộng trọn `+1 điểm`), kết quả tự động tách riêng từng lớp (`6A`, `6B`...) trên Google Sheets.
+> "Dạ chào Thầy/Cô! Tính năng **Tạo Video Tương Tác E-Learning (Chống Tua Nhanh + 10 Dạng Câu Hỏi Nhúng Chuẩn GDPT 2018 + Tự Phân Tab Lớp Trên Google Sheets + Chuẩn Đạt $\ge$ 80%)** giúp Thầy/Cô tạo trang học tập trực tuyến chuẩn sư phạm: học sinh **không thể tua nhanh**, trả lời **SAI không bị lộ lời giải thích** (chỉ khi tự làm **ĐÚNG** mới mở giải thích và cộng trọn `+1 điểm`), kết quả tự động tách riêng từng lớp (`6A`, `6B`...) trên Google Sheets.
 >
 > Em xin hướng dẫn Thầy/Cô **từng bước từ đầu (A → Z)** cực kỳ đơn giản như sau ạ:
 >
@@ -414,7 +414,7 @@ Khi giáo viên gõ câu lệnh mở đầu chưa kèm thông tin chi tiết, AI
 > - Link Web App Google Sheets: [Dán link .../exec HOẶC ghi "Hướng dẫn tôi tạo Sổ điểm Google Sheets"]
 > - Mật khẩu Chế độ Thầy Cô: [Nhập mật khẩu riêng của Thầy/Cô, ví dụ: Thien2026 - để trống mặc định là 123456]
 > - Yêu cầu sư phạm:
->   1. Tự thiết kế [5 - 7] trạm câu hỏi tương tác đa dạng (Trắc nghiệm 4 lựa chọn, Đúng/Sai, Điền đáp án số, Ghép thẻ) rải đều theo mạch bài giảng.
+>   1. Tự thiết kế [5 - 7] trạm câu hỏi tương tác đa dạng (tối ưu từ bộ 10 dạng: Trắc nghiệm 4 lựa chọn, Đúng/Sai đơn, Đúng/Sai 4 ý a-b-c-d, Chọn nhiều đáp án, Điền đáp án, Điền khuyết, Ghép thẻ, Nối cặp A-B, Sắp xếp thứ tự, Phân loại nhóm) rải đều theo mạch bài giảng.
 >   2. Khóa chống tua nhanh 100%; học sinh trả lời SAI không được hiện lời giải thích, chỉ khi tự làm ĐÚNG mới hiện giải thích và cộng +1 điểm để đạt chuẩn Hoàn thành >= 80%.
 >   3. Đóng gói sẵn thư mục chuẩn index.html ra ngoài Desktop để tôi kéo thả lên Netlify.
 > ```

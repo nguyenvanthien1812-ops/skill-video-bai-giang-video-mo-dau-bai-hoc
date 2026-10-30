@@ -17,7 +17,7 @@
 ### 2. 🌐 Tạo Trang Web Video Tương Tác E-Learning & Đưa Lên Web Netlify (30 Giây)
 - Tạo trực tiếp từ **Video `.mp4` vừa xuất từ PPTX**, từ **Link YouTube bài giảng**, hoặc làm **trọn gói từ con số 0 chỉ với file Giáo án Word / Sách giáo khoa**.
 - **Khóa chống tua nhanh 100%** (tự động kéo ngược về vị trí cũ nếu học sinh cố tua; khóa YouTube chạy ngầm khi đang mở câu hỏi).
-- **4 dạng câu hỏi tương tác hiện đại** chạy mượt trên cả điện thoại và máy tính: Trắc nghiệm 4 lựa chọn (`MCQ`), Đúng/Sai 1-chạm (`TF`), Điền đáp án số/chữ (`Fill`), Chạm/Ghép thẻ (`Drag/Tap`).
+- **10 dạng câu hỏi tương tác hiện đại** chạy mượt trên cả điện thoại và máy tính: Trắc nghiệm 4 lựa chọn (`MCQ`), Đúng/Sai 1-chạm (`TF`), Điền đáp án số/chữ (`Fill`), Chạm/Ghép thẻ (`Drag/Tap`).
 - **Quy tắc sư phạm Mastery Gate ($\ge$ 80%):** Học sinh trả lời **SAI tuyệt đối không lộ hộp Giải thích** (chỉ hiện nút `⏪ Xem lại 30s bài giảng`); chỉ khi tự suy nghĩ trả lời **ĐÚNG** mới mở `💡 Hướng dẫn & Giải thích` và cộng trọn `+1 điểm` hoàn thành trạm.
 - **Sổ điểm Google Sheets thời gian thực:** Tự động tách tab riêng cho từng lớp (`6A`, `6B`, `7A1`...) và thống kê điểm trung bình.
 - **Bảo mật & Đổi mật khẩu Chế độ Thầy Cô 1-click:** Ẩn hoàn toàn gợi ý mật khẩu trên giao diện học sinh, đổi mật khẩu trong 1 giây bằng `DOI_MAT_KHAU_THAY_CO.bat`, kèm hướng dẫn từng bước đưa lên **Netlify**!

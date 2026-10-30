@@ -73,7 +73,7 @@ PHẦN II: CÁCH SỬ DỤNG 3 TÍNH NĂNG TRÊN GOOGLE ANTIGRAVITY
 
 2. Ưu điểm sư phạm vượt trội của Web Video Tương Tác:
    - Khóa chống tua nhanh 100%, chống YouTube chạy ngầm khi đang mở câu hỏi.
-   - 4 dạng câu hỏi nhúng: Trắc nghiệm 4 lựa chọn, Đúng/Sai, Điền đáp án số, Ghép thẻ.
+   - 10 dạng câu hỏi tương tác chuẩn GDPT 2018: Trắc nghiệm 4 lựa chọn (mcq), Đúng/Sai đơn (tf), Đúng/Sai 4 ý a-b-c-d (tf_group), Chọn nhiều đáp án đúng (multi), Điền đáp án số/chữ (fill), Điền khuyết nhiều chỗ trống (cloze), Ghép thẻ (drag), Nối cặp 2 cột A-B (match), Sắp xếp thứ tự (order), Phân loại nhóm (classify).
    - Cơ chế Mastery Gate: Học sinh trả lời SAI tuyệt đối KHÔNG hiện lời giải thích (chỉ hiện nút
      "Xem lại 30s bài giảng"); chỉ khi tự trả lời ĐÚNG mới hiện "Hướng dẫn & Giải thích" và cộng +1đ
      để mọi học sinh kiên trì học hết bài đều đạt chuẩn Hoàn thành >= 80%.
