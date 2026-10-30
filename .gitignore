@@ -1,0 +1,17 @@
+# Python cache & temporary files
+__pycache__/
+*.py[cod]
+*$py.class
+*.tmp
+~$*
+
+# Personal configs & protected files
+config.json
+license.key
+machine_id.txt
+MA_MAY_CUA_BAN.txt
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+extracted_images/
