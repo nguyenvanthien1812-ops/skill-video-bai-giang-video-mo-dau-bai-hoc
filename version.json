@@ -1,11 +1,14 @@
 {
   "name": "tao-slide-va-video-khoi-dong",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "release_date": "2026-10-30",
   "description": "Bộ Tiện Ích Sư Phạm 3-Trong-1 GDPT 2018: (1) Soạn Slide PowerPoint 16:9 chuẩn sư phạm từ Giáo án Word/SGK -> Viết lời bình Notes -> Lồng tiếng AI phát thanh viên -> Xuất Video bài giảng MP4 Full HD 1080p; (2) Tạo Web Video Tương Tác E-Learning chống tua nhanh 100%, 10 dạng câu hỏi chuẩn GDPT 2018 Mastery Gate >= 80%, tự phân lớp Google Sheets, bảo mật & đổi mật khẩu Chế độ Thầy Cô 1-click kèm hướng dẫn đưa lên Netlify; (3) Tạo kịch bản & Prompt Veo 3 Video khởi động bài học 60-80s đồng nhất nhân vật.",
   "author": "Thầy Nguyễn Văn Thiện - Trường THCS Ứng Hòe",
   "github_repo": "nguyenvanthien1812-ops/skill-video-bai-giang-video-mo-dau-bai-hoc",
   "changelog": {
+    "2.1.1": [
+      "TẬP TRUNG SƯ PHẠM TUYỆT ĐỐI CHO HỌC SINH — ẨN CÁC ĐIỂM DỪNG & CHẤM MỐC GIÂY KHI TẮT CHẾ ĐỘ THẦY CÔ (templates/video_tuong_tac_template.html): Ở chế độ Học sinh (⚙️ Thầy Cô: TẮT), hệ thống tự động ẩn hoàn toàn khung Tiến độ các điểm dừng tương tác (#lessonInfoBox) cùng các chấm mốc giây trên thanh tua (#checkpointMarkersContainer) để học sinh tập trung nghe giảng liền mạch, không nhìn chằm chằm vào mốc giây chờ câu hỏi. Chỉ khi bật Chế độ Thầy Cô (🔓 Thầy Cô: BẬT) thì danh sách các điểm dừng và chấm mốc mới hiển thị để giáo viên bấm nhảy nhanh tới kiểm tra câu hỏi."
+    ],
     "2.1.0": [
       "MỞ RỘNG LÊN TRỌN BỘ 10 DẠNG CÂU HỎI TƯƠNG TÁC CHUẨN GDPT 2018 (templates/video_tuong_tac_template.html & scripts/interactive_video_builder.py): Bổ sung 6 dạng câu hỏi tương tác mới bên cạnh 4 dạng cơ bản (mcq, tf, fill, drag): (5) Đúng/Sai đa mệnh đề a, b, c, d chuẩn Phần II đề thi mới Bộ GD&ĐT (tf_group); (6) Trắc nghiệm nhiều đáp án đúng Checkbox (multi); (7) Nối cặp tương ứng 2 cột A <-> B chạm-để-nối gắn nhãn màu (match); (8) Sắp xếp thứ tự quy trình / dãy số bằng nút lên/xuống hoặc chạm đổi chỗ (order); (9) Điền khuyết nhiều chỗ trống {{1}}, {{2}} hỗ trợ cả chạm chọn từ ngân hàng từ wordBank lẫn gõ trực tiếp (cloze); (10) Phân loại thẻ dữ kiện vào 2-4 nhóm kiến thức 1-chạm (classify).",
       "CHỐNG ĐOÁN MÒ & BẢO TOÀN MASTERY GATE 100% TRÊN CẢ 10 DẠNG CÂU HỎI: Khi học sinh trả lời SAI ở các dạng nhiều ý (tf_group, multi, match, order, cloze, classify), hệ thống tuyệt đối KHÔNG hiện hộp Giải thích và KHÔNG tô lộ đáp án đúng/sai của từng ý lẻ (chỉ thông báo tổng số ý/cặp đã đúng như 'Đúng 2/4 mệnh đề', 'Đúng 2/3 cặp' kèm nút Xem lại 30s bài giảng); chỉ khi đúng 100% mới mở khóa hộp Giải thích chi tiết + cộng trọn +1 điểm hoàn thành trạm.",
