@@ -18,6 +18,23 @@ import json
 import subprocess
 import argparse
 
+def _require_license():
+    """Kiểm tra bản quyền - BẮT BUỘC trước khi sử dụng."""
+    try:
+        import os as _os, sys as _sys
+        _scripts_dir = _os.path.dirname(_os.path.abspath(__file__))
+        if _scripts_dir not in _sys.path:
+            _sys.path.insert(0, _scripts_dir)
+        import license_manager
+        return license_manager.require_valid_license()
+    except ImportError:
+        raise PermissionError(
+            "LỖI BẢN QUYỀN: Không tìm thấy hệ thống xác minh bản quyền (license_manager.py).\n"
+            "Vui lòng kích hoạt bản quyền trước khi sử dụng."
+        )
+
+_require_license()
+
 try:
     sys.stdout.reconfigure(encoding="utf-8")
 except Exception:

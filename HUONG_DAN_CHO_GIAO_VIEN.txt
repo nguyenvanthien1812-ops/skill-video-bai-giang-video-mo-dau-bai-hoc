@@ -1,121 +1,92 @@
 ================================================================================
-  HƯỚNG DẪN SỬ DỤNG BỘ TIỆN ÍCH SƯ PHẠM 3-TRONG-1 DÀNH CHO GIÁO VIÊN (v2.1.0)
-  (1) SOẠN SLIDE POWERPOINT (PPTX 16:9) -> LỜI BÌNH -> LỒNG TIẾNG AI -> VIDEO MP4
-  (2) TẠO WEB VIDEO TƯƠNG TÁC E-LEARNING CHỐNG TUA NHANH & ĐƯA LÊN NETLIFY
-  (3) TẠO KỊCH BẢN & PROMPT VEO 3 CHO VIDEO KHỞI ĐỘNG BÀI HỌC (60-80 GIÂY)
-  Tác giả: Thầy Nguyễn Văn Thiện - Trường THCS Ứng Hòe
+  HƯỚNG DẪN SỬ DỤNG BỘ TIỆN ÍCH DÀNH CHO GIÁO VIÊN
+  (1) TẠO KỊCH BẢN VIDEO KHỞI ĐỘNG BÀI HỌC (VEO 3)
+  (2) SOẠN SLIDE BÀI GIẢNG POWERPOINT (PPTX) TỪ GIÁO ÁN, SGK, PDF HAY ẢNH
+  Tác giả: Thầy Nguyễn Văn Thiện - THCS Ứng Hòe
 ================================================================================
 
 Kính gửi Quý Thầy/Cô,
 
-Bộ tiện ích v2.1.0 được đóng gói độc lập và tự động hóa khép kín 100%, giúp Thầy/Cô
-đi trọn vẹn chuỗi bài giảng số hiện đại theo Chương trình GDPT 2018 & CV 5512:
-  [Giáo án Word / SGK PDF]
-       --> [Slide PowerPoint .pptx 16:9 chuẩn sư phạm]
-       --> [Viết lời bình Notes & Lồng tiếng AI Cô Hoài My / Thầy Nam Minh]
-       --> [Xuất Video bài giảng .mp4 Full HD 1080p]
-       --> [Đóng gói Trang Web Video Tương Tác E-Learning đưa lên Netlify gửi Zalo lớp!]
+Bộ tiện ích này được đóng gói độc lập và tự động hóa 100%, giúp Thầy/Cô:
+1. Tạo kịch bản & Prompt AI (Veo 3, Kling, Runway) dựng video mở đầu bài học 60-80s
+   sinh động, đồng nhất nhân vật thầy/cô giáo và kích thích học sinh tò mò.
+2. Soạn bộ Slide PowerPoint (.pptx) chuẩn mực sư phạm theo Chương trình GDPT 2018
+   và Công văn 5512/BGDĐT:
+   - Tự động bóc tách ảnh và chữ từ File Giáo án Word (.docx) hoặc Sách giáo khoa (.pdf).
+   - Loại bỏ hoàn toàn các slide hành chính rườm rà (Mục tiêu, Năng lực, Yêu cầu...).
+   - Đi thẳng vào tiến trình dạy học trực quan 3 bước:
+     [1. Quan sát Kênh hình/SGK] -> [2. Câu hỏi thảo luận] -> [3. Em cần ghi nhớ chốt ghi vở].
+   - Font Times New Roman 100%, cỡ chữ to rõ, công thức Toán Native OMML sửa trực tiếp.
+   - Hỗ trợ lồng tiếng AI phát thanh viên (Edge-TTS) và xuất Video MP4 Full HD 1080p.
 
 
 ================================================================================
 PHẦN I: HƯỚNG DẪN CÀI ĐẶT 2 BƯỚC (CHỈ CẦN LÀM 1 LẦN DUY NHẤT)
 ================================================================================
 
-👉 BƯỚC 1: Nhấp đúp chuột vào file: [ 1_CAI_DAT_MOI_TRUONG.bat ]
-   - Hệ thống tự động kiểm tra/cài đặt Python 3.11 và toàn bộ thư viện cần thiết
-     (python-pptx, edge-tts, pillow, python-docx, pymupdf...).
-   - Khi hiện "CÀI ĐẶT MÔI TRƯỜNG THÀNH CÔNG 100%", bấm phím bất kỳ để đóng.
+👉 BƯỚC 1: Nhấp đúp chuột vào file:
+   [ 1_CAI_DAT_MOI_TRUONG.bat ]
+   - Hệ thống sẽ tự động kiểm tra Python trên máy tính.
+   - Nếu chưa có Python, hệ thống sẽ tự động tải và cài đặt Python 3.11.
+   - Tự động cài đặt toàn bộ các thư viện cần thiết (python-pptx, edge-tts, pillow...).
+   - Khi màn hình hiện thông báo "CÀI ĐẶT MÔI TRƯỜNG THÀNH CÔNG 100%", Thầy/Cô bấm phím bất kỳ để đóng cửa sổ.
 
-👉 BƯỚC 2: Nhấp đúp chuột vào file: [ 2_NAP_VAO_ANTIGRAVITY.bat ]
-   - Hệ thống tự động nạp bộ tiện ích vào phần mềm Google Antigravity.
-
-*(Mỗi khi muốn tải bản nâng cấp mới từ GitHub, Thầy/Cô chỉ cần nhấp đúp vào file
-  [ 3_CAP_NHAT_TINH_NANG_MOI.bat ] hoặc gõ "cập nhật tính năng mới" trong khung chat!)*
+👉 BƯỚC 2: Nhấp đúp chuột vào file:
+   [ 2_NAP_VAO_ANTIGRAVITY.bat ]
+   - Hệ thống tự động nạp tiện ích vào phần mềm Google Antigravity.
+   - Màn hình báo "ĐÃ NẠP TIỆN ÍCH VÀO ANTIGRAVITY THÀNH CÔNG!".
 
 
 ================================================================================
-PHẦN II: CÁCH SỬ DỤNG 3 TÍNH NĂNG TRÊN GOOGLE ANTIGRAVITY
+PHẦN II: CÁCH SỬ DỤNG TRÊN GOOGLE ANTIGRAVITY
 ================================================================================
 
---------------------------------------------------------------------------------
-🎓 TÍNH NĂNG 1: TỪ GIÁO ÁN / SGK -> SLIDE PPTX -> LỜI BÌNH -> VIDEO BÀI GIẢNG MP4
---------------------------------------------------------------------------------
-1. Soạn Slide PowerPoint (.pptx) từ Giáo án Word hoặc Sách giáo khoa PDF/ảnh:
-   - Kéo thả file Word giáo án hoặc PDF/ảnh SGK vào khung chat và nhắn:
-     "Soạn cho tôi bài giảng slide PPTX chuẩn 3 bước từ giáo án này"
-   - AI tự động bóc tách ảnh gốc, lập Bảng kịch bản từng slide (Storyboard) chờ Thầy/Cô duyệt,
-     sau đó xuất file .pptx 16:9 chuẩn Times New Roman, công thức Toán Native OMML sửa trực tiếp.
-
-2. Thêm lời bình giảng dạy vào Slide PPTX có sẵn:
-   - Kéo thả file .pptx vào khung chat và nhắn:
-     "Tôi có file pptx này rồi, hãy viết lời bình giảng dạy truyền cảm vào từng slide giúp tôi"
-
-3. Lồng tiếng AI phát thanh viên & Xuất Video bài giảng MP4 Full HD 1080p:
-   - Cách A (Kéo thả 1-click trên máy):
-     + Kéo thả file PPTX vào [ LONG_TIENG_AI.bat ] -> chọn giọng Cô Hoài My (1) hoặc Thầy Nam Minh (2).
-       (Hệ thống tự đo chính xác thời lượng từng slide và lưu bảng mốc giây _SlideTimeline.json).
-     + Kéo thả file PPTX đã lồng tiếng vào [ XUAT_VIDEO_TU_PPTX.bat ] -> xuất Video .mp4 Full HD 1080p!
-   - Cách B (Nhắn trực tiếp trong khung chat):
-     + Nhắn: "Hãy lồng tiếng AI giọng Cô Hoài My và xuất video MP4 Full HD từ file PPTX này giúp tôi".
-
+Sau khi hoàn thành 2 bước trên, Thầy/Cô chỉ cần mở Google Antigravity lên và chat như sau:
 
 --------------------------------------------------------------------------------
-🌐 TÍNH NĂNG 2: TẠO TRANG WEB VIDEO TƯƠNG TÁC E-LEARNING & ĐƯA LÊN NETLIFY
+🎬 TÍNH NĂNG 1: TẠO VIDEO KHỞI ĐỘNG BÀI HỌC VỚI VEO 3
 --------------------------------------------------------------------------------
-1. Bắt đầu nhanh nhất (Cầm tay chỉ việc từ A -> Z):
-   - Mở Google Antigravity và gõ đúng 1 câu:
-     "Tôi muốn tạo video tương tác"
-     hoặc:
-     "Hướng dẫn tôi làm video tương tác từ giáo án word / sách giáo khoa"
-   - AI sẽ hiển thị ngay quy trình 4 bước và 5 mẫu câu lệnh copy-paste sẵn (dành cho cả
-     trường hợp ĐÃ CÓ link YouTube, ĐÃ CÓ sẵn file Slide PowerPoint .pptx, hoặc CHƯA CÓ video —
-     làm trọn gói từ Giáo án Word/SGK -> Slide PPTX -> Viết lời bình -> Lồng tiếng AI ->
-     Xuất Video MP4 -> Tạo Web Video Tương Tác!).
-
-2. Ưu điểm sư phạm vượt trội của Web Video Tương Tác:
-   - Khóa chống tua nhanh 100%, chống YouTube chạy ngầm khi đang mở câu hỏi.
-   - Trọn bộ 10 dạng câu hỏi tương tác chuẩn GDPT 2018 (Thầy/Cô gọi tên tiếng Việt dạng nào cũng được):
-       (1) Trắc nghiệm 1 đáp án đúng (A, B, C, D)
-       (2) Đúng / Sai đơn (1 nhận định)
-       (3) Đúng / Sai đa mệnh đề (4 ý a, b, c, d chuẩn Phần II đề thi mới Bộ GD&ĐT)
-       (4) Trắc nghiệm nhiều đáp án đúng (tích ô vuông Checkbox)
-       (5) Điền đáp án ngắn / Điền số
-       (6) Điền khuyết nhiều chỗ trống (1), (2), (3) (chạm từ gợi ý hoặc gõ trực tiếp)
-       (7) Chạm / Ghép thẻ vào ô kết quả
-       (8) Nối cặp tương ứng 2 cột (Cột A <-> Cột B)
-       (9) Sắp xếp thứ tự quy trình / các bước giải / dãy số
-       (10) Phân loại thẻ vào 2-4 nhóm kiến thức
-     -> Khi tạo bài, Thầy/Cô có thể bảo AI "Tự phối hợp đa dạng từ 10 dạng" HOẶC chỉ định rõ:
-        "Cho tôi 2 câu Trắc nghiệm, 1 câu Đúng/Sai 4 ý a-b-c-d, 1 câu Nối cột A-B, 1 câu Phân loại nhóm..."!
-   - Cơ chế Mastery Gate: Học sinh trả lời SAI tuyệt đối KHÔNG hiện lời giải thích (chỉ hiện nút
-     "Xem lại 30s bài giảng"); chỉ khi tự trả lời ĐÚNG mới hiện "Hướng dẫn & Giải thích" và cộng +1đ
-     để mọi học sinh kiên trì học hết bài đều đạt chuẩn Hoàn thành >= 80%.
-   - Kết quả tự động ghi về Google Sheets và tự tách tab riêng theo từng lớp (6A, 6B...).
-
-3. Thay đổi mật khẩu Chế độ Thầy Cô (Mặc định ban đầu: 123456 - đã ẩn khỏi màn hình học sinh):
-   - Cách 1: Gõ trong khung chat: "Tôi muốn thay đổi mật khẩu chế độ thầy cô" -> AI hướng dẫn đủ 4 tình huống.
-   - Cách 2 (1-click): Kéo thả thư mục bài giảng vào file [ DOI_MAT_KHAU_THAY_CO.bat ] -> nhập mật khẩu mới!
-
-4. Đưa bài giảng lên Web Netlify miễn phí để lấy đường link gửi Zalo học sinh (30 giây):
-   - Đưa bài mới lần đầu:
-     Mở https://app.netlify.com -> Projects (Sites) -> Add new project -> Deploy manually
-     -> Kéo NGUYÊN CẢ THƯ MỤC bài giảng ngoài Desktop thả vào vòng tròn nét đứt
-        (LƯU Ý: Kéo cả thư mục, không kéo lẻ file index.html để tránh lỗi 404)
-     -> Vào Project configuration -> Change project name đặt tên link đẹp -> gửi Zalo lớp!
-   - Cập nhật bài đã có (khi đổi mật khẩu Thầy Cô hoặc sửa câu hỏi mà KHÔNG muốn đổi link cũ):
-     Mở https://app.netlify.com -> Bấm vào tên bài giảng cũ -> Chọn tab Deploys
-     -> Kéo NGUYÊN CẢ THƯ MỤC đã cập nhật thả vào ô cập nhật -> Bấm Ctrl + F5 (giữ nguyên 100% link cũ!).
-
-
---------------------------------------------------------------------------------
-🎬 TÍNH NĂNG 3: TẠO KỊCH BẢN & PROMPT VEO 3 VIDEO KHỞI ĐỘNG BÀI HỌC (60-80 GIÂY)
---------------------------------------------------------------------------------
-1. Gõ tin nhắn trong Google Antigravity:
+1. Thầy/Cô gõ tin nhắn:
    "Tôi muốn tạo kịch bản video mở đầu bài học"
-2. Điền mẫu thông tin ngắn (Môn, Lớp, Tên bài, Nhân vật Thầy/Cô giáo, Thời lượng 60s-80s).
-3. Chọn 1 trong 3-5 ý tưởng AI gợi ý -> AI xuất trọn bộ Prompt Veo 3 từng clip 10 giây
-   trong đúng 1 khung code duy nhất (bấm Copy 1 lần dán thẳng vào Veo 3, đồng nhất nhân vật 100%).
+
+2. Trợ lý AI sẽ gửi lại một biểu mẫu điền thông tin ngắn gọn:
+   - Môn học, Lớp, Tên bài, Trọng tâm cần tò mò.
+   - Chọn nhân vật: Thầy giáo chững chạc (~35t) / Thầy giáo trẻ (~28t) / Cô giáo trẻ (~25t).
+   - Thời lượng: 60s (6 clip) / 70s (7 clip) / 80s (8 clip).
+
+3. Sau khi Thầy/Cô điền thông tin:
+   - AI sẽ gợi ý 3-5 ý tưởng kịch bản hấp dẫn kèm bảng so sánh.
+   - Thầy/Cô chọn 1 ý tưởng ưng ý.
+   - AI sẽ xuất trọn bộ Prompt Veo 3 từng clip đóng gói trong đúng 1 khung code duy nhất.
+   - Thầy/Cô chỉ cần bấm nút "Copy" trên khung code rồi dán thẳng vào Veo 3 để tạo video!
+
+4. Ghép video: Dùng CapCut import các clip 10s, chèn chữ tiếng Việt đè lên và thêm nhạc nền.
+
+
+--------------------------------------------------------------------------------
+🎓 TÍNH NĂNG 2: SOẠN SLIDE BÀI GIẢNG POWERPOINT (PPTX) CHUẨN SƯ PHẠM
+--------------------------------------------------------------------------------
+1. Soạn slide từ file Giáo án Word (.docx) hoặc Sách giáo khoa (.pdf):
+   - Thầy/Cô kéo thả file Word giáo án hoặc PDF sách giáo khoa vào khung chat.
+   - Nhắn tin:
+     "Soạn cho tôi bài giảng slide PPTX chuẩn 3 bước từ giáo án này"
+     hoặc:
+     "Làm slide bài giảng KHTN 6 chuẩn sư phạm từ file SGK này giúp tôi"
+
+2. Tiến trình làm việc:
+   - AI tự động bóc tách hình ảnh phân giải gốc từ file và đọc nội dung bài học.
+   - AI lập "Bảng phác thảo chi tiết từng slide (Storyboard)" gửi Thầy/Cô duyệt trước.
+   - Thầy/Cô đồng ý -> AI tạo file PowerPoint (.pptx) chuẩn 16:9, font Times New Roman,
+     chèn ảnh sắc nét, có câu hỏi và khung ghi nhớ chốt kiến thức.
+   - AI gửi file PPTX hoàn chỉnh kèm đường dẫn mở trực tiếp.
+
+3. Lồng tiếng AI & Xuất Video bài giảng MP4:
+   - Muốn lồng tiếng: Kéo thả file PPTX vào file [ LONG_TIENG_AI.bat ]
+     -> Chọn giọng đọc Cô Hoài My hoặc Thầy Nam Minh.
+   - Muốn xuất video MP4: Kéo thả file PPTX vào file [ XUAT_VIDEO_TU_PPTX.bat ]
+     -> Hệ thống tự động xuất video MP4 Full HD 1080p sắc nét để trình chiếu!
+
 
 ================================================================================
-Chúc Quý Thầy/Cô có những tiết dạy thật sôi nổi, hiện đại và truyền cảm hứng!
+Chúc Quý Thầy/Cô có những tiết học thật sôi nổi, trực quan và tràn đầy cảm hứng!
 ================================================================================

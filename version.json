@@ -1,7 +1,7 @@
 {
   "name": "tao-slide-va-video-khoi-dong",
-  "version": "2.1.1",
-  "release_date": "2026-10-30",
+  "version": "2.1.2",
+  "release_date": "2026-11-02",
   "description": "Bộ Tiện Ích Sư Phạm 3-Trong-1 GDPT 2018: (1) Soạn Slide PowerPoint 16:9 chuẩn sư phạm từ Giáo án Word/SGK -> Viết lời bình Notes -> Lồng tiếng AI phát thanh viên -> Xuất Video bài giảng MP4 Full HD 1080p; (2) Tạo Web Video Tương Tác E-Learning chống tua nhanh 100%, 10 dạng câu hỏi chuẩn GDPT 2018 Mastery Gate >= 80%, tự phân lớp Google Sheets, bảo mật & đổi mật khẩu Chế độ Thầy Cô 1-click kèm hướng dẫn đưa lên Netlify; (3) Tạo kịch bản & Prompt Veo 3 Video khởi động bài học 60-80s đồng nhất nhân vật.",
   "author": "Thầy Nguyễn Văn Thiện - Trường THCS Ứng Hòe",
   "github_repo": "nguyenvanthien1812-ops/skill-video-bai-giang-video-mo-dau-bai-hoc",
@@ -25,6 +25,11 @@
       "TÍCH HỢP MASTER TEMPLATE & BUILDER VIDEO TƯƠNG TÁC E-LEARNING (templates/video_tuong_tac_template.html & scripts/interactive_video_builder.py): Khóa chống tua nhanh 100%, 4 dạng câu hỏi tương tác (Trắc nghiệm MCQ, Đúng/Sai 1-chạm, Điền đáp án số, Chạm/Ghép thẻ), tự tách tab từng lớp (6A, 6B...) trên Google Sheets.",
       "CƠ CHẾ SƯ PHẠM MASTERY GATE & CHUẨN HOÀN THÀNH >= 80%: Học sinh trả lời SAI tuyệt đối không lộ hộp Giải thích (chỉ hiện nút Xem lại 30s bài giảng); chỉ khi tự làm ĐÚNG mới mở khóa Hướng dẫn & Giải thích, cộng trọn +1 điểm hoàn thành trạm và mở nút Tiếp tục bài học (6s).",
       "BẢO MẬT & ĐỔI MẬT KHẨU CHẾ ĐỘ THẦY CÔ 1-CLICK (DOI_MAT_KHAU_THAY_CO.bat & --set-password): Ẩn hoàn toàn gợi ý mật khẩu trên giao diện học sinh (#teacherPwd), hỗ trợ đặt mật khẩu riêng ngay từ đầu hoặc đổi mật khẩu trong 1 giây kèm hướng dẫn 4 tình huống chi tiết."
+    ],
+    "2.1.2": [
+      "BAO MAT HE THONG BAN QUYEN: Thu hoi tu dong ban quyen khong hop le khi cap nhat. He thong kiem tra va vo hieu hoa cac ma ban quyen bi thu hoi hoac co thoi han vuot muc cho phep (>365 ngay).",
+      "TANG CUONG BAO VE: Bo sung danh sach den cung (HARDCODED_REVOKED_IDS) trong ma nguon — hoat dong 100% offline.",
+      "HO TRO DUONG DAN TIENG VIET: Sua triet de loi cai dat tren may co thu muc chua ky tu tieng Viet co dau (o D:\\SOAN GIANG\\...) bang PowerShell LiteralPath."
     ]
   }
 }
